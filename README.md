@@ -138,9 +138,31 @@ Die Frontend-Anwendung läuft nun auf `http://localhost:5173`
 
 ## Branches
 
-- `main` - Hauptbranch mit vollständiger Integration
-- `frontend` - Nur Frontend-Code
-- `backend` - Nur Backend-Code
+Das Projekt kann in separaten Branches organisiert werden:
+
+- `main` / `copilot/create-news-website-structure` - Hauptbranch mit vollständiger Integration
+- `frontend` - Kann erstellt werden, um nur Frontend-Code zu enthalten
+- `backend` - Kann erstellt werden, um nur Backend-Code zu enthalten
+
+Um separate Branches zu erstellen:
+
+### Backend-Branch erstellen
+```bash
+git checkout -b backend
+rm -rf frontend
+git add -A
+git commit -m "Backend branch - only backend code"
+git push -u origin backend
+```
+
+### Frontend-Branch erstellen
+```bash
+git checkout -b frontend
+rm -rf backend
+git add -A
+git commit -m "Frontend branch - only frontend code"
+git push -u origin frontend
+```
 
 ## Entwicklung
 
