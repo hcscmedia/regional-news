@@ -178,6 +178,10 @@ cd frontend
 npm run dev  # Vite Development Server mit HMR
 ```
 
+## Sicherheit
+
+Siehe [SECURITY.md](SECURITY.md) für Sicherheitshinweise und Empfehlungen für den Produktionseinsatz.
+
 ## Lizenz
 
 MIT
